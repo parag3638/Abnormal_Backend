@@ -11,9 +11,12 @@ const authRoutes = require('./routers/auth/authRoutes')();
 const security = require('./routers/file/security.js')();
 const mail = require('./routers/common/mail.js')();
 
+
 const allowedOrigins = [
+    'http://localhost:3000',
     'http://localhost:8080',
-    'http://localhost:3000'
+    'http://localhost:9001',
+    'https://abnormal-ui.vercel.app'
 ];
 
 app.use(
